@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Clock, ShieldCheck, HardHat, FileCheck2, Calculator, Map, Users, Lightbulb } from "lucide-react";
 
@@ -56,19 +58,19 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 50 } }
+  show: { opacity: 1, y: 0, transition: { type: "spring" as const, stiffness: 50 } }
 };
 
 export function Diferenciais() {
   return (
     <section id="diferenciais" className="py-24 bg-secondary text-secondary-foreground relative overflow-hidden">
       {/* Abstract Background pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-20">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="blueprint" width="40" height="40" patternUnits="userSpaceOnUse">
               <rect width="40" height="40" fill="none"></rect>
-              <path d="M0,40 L40,40 L40,0" fill="none" stroke="#ffffff" strokeWidth="1"></path>
+              <path d="M0,40 L40,40 L40,0" fill="none" stroke="rgba(15, 23, 42, 0.15)" strokeWidth="1"></path>
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#blueprint)"></rect>
@@ -85,7 +87,7 @@ export function Diferenciais() {
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
-              A solidez que o seu <br/>projeto <span className="text-primary">exige.</span>
+              A solidez que o seu <br/>projeto <span className="text-white border-b border-primary/50 font-bold">exige.</span>
             </h2>
           </div>
           <div className="max-w-md">

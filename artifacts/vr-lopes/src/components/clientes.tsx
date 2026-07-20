@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 
 const clients = [
@@ -21,15 +23,15 @@ export function Clientes() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="h-[2px] w-12 bg-primary"></div>
-            <span className="text-white/80 font-bold uppercase tracking-wider text-sm">
+            <span className="text-secondary-foreground/85 font-bold uppercase tracking-wider text-sm">
               Quem Confia em Nós
             </span>
             <div className="h-[2px] w-12 bg-primary"></div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-secondary-foreground mb-6">
             Nossos Parceiros Institucionais
           </h2>
-          <p className="text-white/70 text-lg">
+          <p className="text-secondary-foreground/75 text-lg">
             A confiança de instituições públicas de rigor militar e de grandes nomes do setor imobiliário privado 
             atesta nossa capacidade técnica e compromisso ético.
           </p>
@@ -43,9 +45,9 @@ export function Clientes() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: idx * 0.05 }}
-              className="bg-white/5 border border-white/10 px-6 py-4 rounded-sm flex items-center justify-center hover:bg-white/10 hover:border-primary/50 transition-colors"
+              className="bg-white border border-secondary-foreground/10 px-6 py-4 rounded-sm flex items-center justify-center hover:bg-zinc-50 hover:border-primary/50 transition-colors shadow-xs"
             >
-              <span className="font-medium text-white/90 text-sm md:text-base text-center">
+              <span className="font-semibold text-secondary-foreground text-sm md:text-base text-center">
                 {client}
               </span>
             </motion.div>

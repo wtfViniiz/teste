@@ -1,4 +1,6 @@
-import { Link } from "wouter";
+"use client";
+
+import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 

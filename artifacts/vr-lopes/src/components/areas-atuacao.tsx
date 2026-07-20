@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import engPublicaImg from "@assets/generated_images/eng-publica.jpg";
 import engResidencialImg from "@assets/generated_images/eng-residencial.jpg";
@@ -9,7 +11,7 @@ const areas = [
     id: "publica",
     title: "Engenharia Pública",
     icon: Building2,
-    image: engPublicaImg,
+    image: engPublicaImg.src,
     description: "Execução de grandes obras para os governos municipal, estadual e federal com rigor técnico e conformidade.",
     items: [
       "Escolas e Creches",
@@ -24,7 +26,7 @@ const areas = [
     id: "residencial",
     title: "Engenharia Residencial",
     icon: Home,
-    image: engResidencialImg,
+    image: engResidencialImg.src,
     description: "Concretizamos o sonho da casa própria com sofisticação, conforto e altíssimo padrão de acabamento.",
     items: [
       "Residências de Alto Padrão",
@@ -39,7 +41,7 @@ const areas = [
     id: "condominios",
     title: "Engenharia para Condomínios",
     icon: Building,
-    image: engCondominiosImg,
+    image: engCondominiosImg.src,
     description: "Valorização e segurança patrimonial através de manutenção especializada e obras em áreas comuns.",
     items: [
       "Reformas Estruturais",
@@ -116,10 +118,10 @@ export function AreasAtuacao() {
                 </div>
               ) : (
                 <div className="h-64 bg-secondary p-6 flex flex-col justify-end relative overflow-hidden">
-                  <div className="absolute top-0 right-0 p-12 text-white/5 group-hover:scale-110 transition-transform duration-700">
+                  <div className="absolute top-0 right-0 p-12 text-secondary-foreground/5 group-hover:scale-110 transition-transform duration-700">
                     <area.icon size={120} />
                   </div>
-                  <div className="relative z-20 flex items-center gap-3 text-white">
+                  <div className="relative z-20 flex items-center gap-3 text-secondary-foreground">
                     <area.icon size={28} className="text-primary" />
                     <h3 className="text-2xl font-display font-bold">{area.title}</h3>
                   </div>

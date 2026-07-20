@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Target, Compass, Heart, CheckCircle2 } from "lucide-react";
 
@@ -31,7 +33,7 @@ export function Sobre() {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6 leading-tight">
-              Mais do que obras, edificamos <span className="text-primary">legados.</span>
+              Mais do que obras, edificamos <span className="text-foreground border-b border-primary/50 font-bold">legados.</span>
             </h2>
             
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">

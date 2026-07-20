@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
@@ -41,7 +43,7 @@ export function Contato() {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6 leading-tight">
-              Vamos construir <br/>o seu <span className="text-primary">projeto.</span>
+              Vamos construir <br/>o seu <span className="text-foreground border-b border-primary/50 font-bold">projeto.</span>
             </h2>
             
             <p className="text-muted-foreground text-lg mb-12">
@@ -161,6 +163,20 @@ export function Contato() {
             </form>
           </motion.div>
 
+        </div>
+
+        {/* Google Maps Embed */}
+        <div className="mt-16 border rounded-sm overflow-hidden h-80 bg-muted shadow-sm">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127506.77660205218!2d-60.038435131923055!3d-3.0858169999999955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1bc000000001%3A0x88509abfb67243c2!2sManaus%2C%20AM!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Localização VR Lopes Engenharia"
+          ></iframe>
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import p1Img from "@assets/generated_images/team-placeholder-1.jpg";
 import p2Img from "@assets/generated_images/team-placeholder-2.jpg";
@@ -8,25 +10,25 @@ const team = [
   {
     name: "Valéria Rodrigues Lopes",
     role: "Diretoria Administrativa",
-    image: p1Img,
+    image: p1Img.src,
     description: "Gestão estratégica, administrativa e financeira, garantindo a solidez institucional da empresa."
   },
   {
     name: "Welib Ferreira Santos",
     role: "Diretoria de Operações",
-    image: p2Img,
+    image: p2Img.src,
     description: "Coordenação geral de operações logísticas e controle de contratos."
   },
   {
     name: "Josebarl Vieira",
     role: "Engenharia de Obras Públicas",
-    image: p3Img,
+    image: p3Img.src,
     description: "Especialista técnico responsável pelas execuções e conformidade de obras governamentais."
   },
   {
     name: "Kevin Ferreira",
     role: "Eng. Residencial e Condomínios",
-    image: p4Img,
+    image: p4Img.src,
     description: "Responsável pelo alto padrão técnico em residências e manutenção predial privada."
   }
 ];
